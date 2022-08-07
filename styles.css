@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&family=Roboto+Mono:wght@500&family=Yanone+Kaffeesatz:wght@300;700&display=swap');
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: 'Mouse Memoirs', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding: 1rem;
+  /* background: #9d9d9d; */
+  position: fixed;
+  width: 100%;
+}
+nav .brand {
+  font-size: 2rem;
+  color: rgb(172, 172, 172);
+  letter-spacing: 9pt;
+  font-variant: bolder;
+}
+nav .brand:hover {
+  color: rgb(92, 26, 26);
+}
+nav .menu ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  gap: 0.5rem;
+}
+nav .menu ul li {
+  list-style: none;
+  padding: 1rem;
+}
+nav .menu ul li:hover {
+  border-radius: 0.3rem;
+  background: rgb(92, 26, 26);
+}
+nav .menu ul li:hover a {
+  color: #fff;
+}
+nav .menu ul li a {
+  text-decoration: none;
+  color: rgb(172, 172, 172);
+  letter-spacing: 5pt;
+  font-size: 1.2rem;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
+    url(https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main > .detail {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.detail > h1 {
+  letter-spacing: 10pt;
+  font-size: 10rem;
+}
+.detail > p {
+  font-size: 2rem;
+  background-image: linear-gradient(to right, rgb(92, 26, 26), transparent);
+  padding: 0.5rem;
+  letter-spacing: 3pt;
+}
+.group {
+  padding: 1rem;
+}
+input {
+  font-size: 2rem;
+  padding: 0.5rem;
+  outline: none;
+  border-radius: 0.5rem;
+}
+input[type='submit'] {
+  background: rgb(92, 26, 26);
+  border: none;
+  color: #fff;
+  border-radius: none;
+}
+
+/* product css  */
+.divider {
+  padding: 10rem;
+  font-size: 3rem;
+  text-align: center;
+  letter-spacing: 5pt;
+}
+.product-container {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+}
+.product-container > h1 {
+  text-align: center;
+  padding-top: 5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-bottom: 5rem;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
+  grid-template-rows: none;
+  grid-gap: 1rem;
+}
+.card {
+  box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.6);
+}
+.card,
+.card-body {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 0.5rem;
+  font-size: large;
+}
+.card h3 {
+  font-size: 1.5rem;
+  padding: 0.9rem;
+}
+.card h4,
+.card .info {
+  padding: 0.5rem;
+}
+.card .info {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.card-footer {
+  padding: 0.5rem;
+}
+.card-footer button {
+  padding: 0.7rem;
+  border: none;
+  background: rgb(92, 26, 26);
+  color: #ececec;
+  cursor: pointer;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
